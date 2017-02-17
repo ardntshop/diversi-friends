@@ -8,7 +8,7 @@ exports.view = function(req, res){
 };
 
 
-$( "#target").click(function() {
+/*$( "#target").click(function() {
 	alert( "Handler for .click() called." );
 
-});
+});*/
