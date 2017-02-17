@@ -1,0 +1,79 @@
+
+p {
+	
+}
+
+#titlebar {
+
+	position: relative;
+	float: center;
+	border-bottom:2px solid black;
+	padding-bottom:8px;
+	height:35px;
+	font-family: Times;
+	font-size: 35px;
+	text-align: center;
+	background-color: grey;
+    color:white;
+    text-shadow: 2px 2px black;
+	margin-top:0;
+}
+
+#navbar {
+    width: 20%;
+    height: 100vh;
+    min-width: 20%;
+    max-width: 50px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: 12px;
+    padding-top: 12px;
+    float: left;
+    background-color: lightgrey;
+    border-bottom:1px solid black;
+}
+
+
+#buttons {
+	background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width:80%;
+}
+
+#matches {
+	float:top;
+	text-align:center;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid grey;
+}
+
+#logout {
+	position:absolute; bottom: 30px;
+	background-color: #4CAF50; /* Green */
+    border: 2px solid white;
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    width:15%;
+    cursor: pointer;
+}
+
+
+}
+
+
+
+
+
+
+
