@@ -1,10 +1,10 @@
 
 /*
- * GET Messages Page.
+ * GET Connections Page.
  */
 
 exports.view = function(req, res){
-  res.render('messages');
+  res.render('connections');
 };
 
 

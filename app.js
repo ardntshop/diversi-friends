@@ -7,16 +7,13 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
-
-var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 
 // below added by tommy
 var login = require('./routes/login');
-var messages = require('./routes/messages');
-
-
+var connections = require('./routes/connections');
+var index = require('./routes/index');
 
 var app = express();
 
@@ -47,7 +44,8 @@ app.get('/', index.view);
 
 //below added by tommy
 app.get('/login', login.view);
-app.get('/messages', messages.view);
+app.get('/connections', connections.view);
+app.get('/index', index.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
