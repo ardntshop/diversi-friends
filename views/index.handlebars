@@ -12,15 +12,8 @@
 			<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 <body>
-
-<!--Below is the import for jquery.-->
-<!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
  
-
-
- <!--Begin here (or replace this with any static code already written).-->
 <div id="navbar">
-
 		<div id="buttons"><a href="index" >Home</a> </div> <br><br>
 		<div id="buttons"><a href="profile" >Profile</a> </div><br><br>
 		<div id="buttons"><a href="/requests" >Requests</a> </div><br><br>
@@ -28,11 +21,9 @@
 		<!--<div id="buttons"><a href="help.html" >Help</a> </div><br><br>-->
 		<div id="logout"> <a href="login" >Log Out</a></div>
 	</div>
-
 </div>
 
 <div id="headings">
-
 	<h1>Have a look!</h1>
 	<p>The people shown below have a different political view from you!</p>
 	
@@ -41,7 +32,6 @@
 		<option value="religon"> Religon</option>
 		<option value="culture"> Culture</option>
 	</select>-->
-
 </div>
 	
 
@@ -53,41 +43,22 @@
 	4. test backend routes-->
 
 	<div id="contentBox">
-		test going on right here
+		<div>
+			{{#each friends}}
+      			<div id="userPreview" id="{{id}}">
+          			<img src="{{imageURL}}" width="15%" ... />
+          			<a href="diversi-friends/{{name}}" ... />
+          			<p>{{name}}</p>
+          			<p>{{description}}</p>
+        			</a>
+      			</div>
+    		{{/each}}
 
-
-	<div>
-
-{{#each friends}}
-      <div id="userPreview" id="{{id}}">
-       <!-- <a href="project/{{data}}" class="thumbnail">  -->
-          <img src="{{imageURL}}" width="15%" ... />
-          <a href="diversi-friends/{{name}}" ... />
-          <p>{{name}}</p>
-          <p>{{description}}</p>
-        </a>
-      </div>
-    {{/each}}
-
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/hci-friends.js"></script>
-	
-	<!--<div> 
-	<img src="http://lorempixel.com/500/500/people" width="100px">
-	<h3>Fake Friendo</h3>
-	<p>This is a fake paragrah.</p>
-	</div>-->
-
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/hci-friends.js"></script>
+		</div>
 	</div>
-
-
-
-		
-
-
-	
-</div>
 
 </body>
 </html>

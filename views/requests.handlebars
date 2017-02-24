@@ -1,41 +1,63 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
-<head>
+	<head>
+		<title>DiversiFriends</title>
 
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<div id="titlebar">
+			<p>DiversiFriends</p>
+			</div>
 
-	<div id="titlebar">
-		<p>DiversiFriends</p>
-	</div>
-
-</head>
-
+			<!--Below is import for css stylesheet-->
+			<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
 <body>
-
+ 
 <div id="navbar">
-
 		<div id="buttons"><a href="index" >Home</a> </div> <br><br>
 		<div id="buttons"><a href="profile" >Profile</a> </div><br><br>
-		<div id="buttons"><a href="requests" >Requests</a> </div><br><br>
+		<div id="buttons"><a href="/requests" >Requests</a> </div><br><br>
 		<div id="buttons"><a href="friends" >Friends</a> </div><br><br>
 		<!--<div id="buttons"><a href="help.html" >Help</a> </div><br><br>-->
-		<!--Logout Button-->
 		<div id="logout"> <a href="login" >Log Out</a></div>
-	
 	</div>
-
 </div>
 
 <div id="headings">
-
 	<h1>Your Connection Requests!</h1>
-	<p>These people want to connect with you.</p>
+	<p>These people want to connect with you!</p>
 	
-
+	<!--<select>
+		<option value="politics"> Politics</option> 
+		<option value="religon"> Religon</option>
+		<option value="culture"> Culture</option>
+	</select>-->
 </div>
+	
+	<!-- Add click listener for the selector above to get the value....when we get the value, send a get request to the "backend" through AJAX, and the backend pass in some other value.
 
+	1. setup click listner
+	2. setup ajax
+	3. setup backend routes
+	4. test backend routes-->
+
+	<div id="contentBox">
+		<div>
+			{{#each friends}}
+      			<div id="userPreview" id="{{id}}">
+          			<img src="{{imageURL}}" width="15%" ... />
+          			<a href="diversi-friends/{{name}}" ... />
+          			<p>{{name}}</p>
+          			<p>{{description}}</p>
+        			</a>
+      			</div>
+    		{{/each}}
+
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/hci-friends.js"></script>
+		</div>
+	</div>
 
 </body>
-
 </html>
