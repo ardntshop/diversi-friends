@@ -20,10 +20,9 @@
 <div id="navbar">
 
 		<div id="buttons"><a href="index" >Home</a> </div> <br><br>
-		<div id="buttons"><a href="profile" >Profile</a> </div><br><br>
 		<div id="buttons"><a href="/requests" >Requests</a> </div><br><br>
 		<div id="buttons"><a href="friends" >Friends</a> </div><br><br>
-		<!--<div id="buttons"><a href="help.html" >Help</a> </div><br><br>-->
+		<div id="buttons"><a href="profile" >Profile</a> </div><br><br>
 		<div id="logout"> <a href="login" >Log Out</a></div>
 	</div>
 
@@ -51,41 +50,23 @@
 	4. test backend routes-->
 
 	<div id="contentBox">
-		test going on right here
+		<div>
 
+			{{#each profile}}
+      			<div id="userPreview" id="{{id}}">
+		        	<img src="{{imageURL}}" width="15%" ... />
+    		    	<a href="diversi-friends/{{name}}" ... />
+          			<p>{{name}}</p>
+          			<p>{{personalStatement}}</p>
+        			</a>
+      			</div>
+    		{{/each}}
 
-	<div>
-
-{{#each friends}}
-      <div id="userPreview" id="{{id}}">
-       <!-- <a href="project/{{data}}" class="thumbnail">  -->
-          <img src="{{imageURL}}" width="15%" ... />
-          <a href="diversi-friends/{{name}}" ... />
-          <p>{{name}}</p>
-          <p>{{description}}</p>
-        </a>
-      </div>
-    {{/each}}
-
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/hci-friends.js"></script>
-	
-	<!--<div> 
-	<img src="http://lorempixel.com/500/500/people" width="100px">
-	<h3>Fake Friendo</h3>
-	<p>This is a fake paragrah.</p>
-	</div>-->
-
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="js/bootstrap.js"></script>
+			<script src="js/hci-friends.js"></script>
+		</div>
 	</div>
-
-
-
-		
-
-
-	
-</div>
 
 </body>
 </html>
