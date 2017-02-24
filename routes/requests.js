@@ -1,10 +1,10 @@
 
 /*
- * GET Connections Page.
+ * GET Requests Page.
  */
 
 exports.view = function(req, res){
-  res.render('connections');
+  res.render('requests');
 };
 
 

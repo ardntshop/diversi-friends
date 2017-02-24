@@ -12,8 +12,11 @@ var handlebars = require('express3-handlebars')
 
 // below added by tommy
 var login = require('./routes/login');
-var connections = require('./routes/connections');
+var requests = require('./routes/requests');
 var index = require('./routes/index');
+var profile = require('./routes/profile');
+var friends = require('./routes/friends');
+
 
 var app = express();
 
@@ -44,8 +47,11 @@ app.get('/', index.view);
 
 //below added by tommy
 app.get('/login', login.view);
-app.get('/connections', connections.view);
+app.get('/requests', requests.view);
 app.get('/index', index.view);
+app.get('/profile', profile.view);
+app.get('/friends', friends.view);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
