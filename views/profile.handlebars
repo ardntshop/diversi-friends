@@ -55,10 +55,29 @@
 			{{#each profile}}
       			<div id="userPreview" id="{{id}}">
 		        	<img src="{{imageURL}}" width="15%" ... />
-    		    	<a href="diversi-friends/{{name}}" ... />
-          			<p>{{name}}</p>
-          			<p>{{personalStatement}}</p>
-        			</a>
+          			<p>Name: {{name}}</p>
+          			<p>Personal Statement: {{personalStatement}}</p>
+
+
+          			<form action="/action_page.php">
+  					Update Personal Statement: <input type="text" name="fname"><br>
+
+					</form>
+
+
+
+          			<p>Age: {{age}}</p>
+          			<p>Political View:{{politicalView}}</p>
+
+          			<form action="">
+				    <input type="radio" name="liberal" value="liberal"> Liberal<br>
+    				<input type="radio" name="conservative" value="conservative"> Conservative<br>
+  					<input type="radio" name="progressive" value="progressive"> Progressive<br>
+  					<input type="radio" name="other" value="other"> Other<br>
+    				<input type="radio" name="preferNot" value="preferNot"> Prefer Not to Say<br>
+    				<br>
+    				<button class="saveAll">Save All</button>
+					</form>
       			</div>
     		{{/each}}
 

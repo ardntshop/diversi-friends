@@ -10,6 +10,7 @@
 
 			<!--Below is import for css stylesheet-->
 			<link rel="stylesheet" type="text/css" href="css/styles.css">
+
 	</head>
 <body>
  
@@ -36,7 +37,6 @@
 
 	<!-- Add click listener for the selector above to get the value....when we get the value, send a get request to the "backend" through AJAX, and the backend pass in some other value.
 
-	1. setup click listner
 	2. setup ajax
 	3. setup backend routes
 	4. test backend routes-->
@@ -46,18 +46,37 @@
 			{{#each diversimatches}}
       			<div id="userPreview" id="{{id}}">
           			<img src="{{imageURL}}" width="15%" ... />
-          			<a href="diversi-friends/{{name}}" ... />
           			<p>{{name}}</p>
           			<p>{{description}}</p>
-        			</a>
-      			</div>
-    		{{/each}}
+          			<p>Sending a "Connection Request" will make your email address available to {{name}}.</p>
+          			<br>
+   					
+   				<div>
+          			<div class="connectionRequestButtons"> <button>Send Connection Request</button></div>
 
-			<script src="https://code.jquery.com/jquery.js"></script>
-			<script src="js/bootstrap.js"></script>
-			<script src="js/hci-friends.js"></script>
+          			<div class="hideProfile"><button>Hide This Profile</button>
+          			</div>
+      			</div>
+
+    		{{/each}}
+			
 		</div>
 	</div>
 
+
+			<script src="https://code.jquery.com/jquery.js"></script>
+			<script src="/js/bootstrap.min.js"></script>
+			<script src="/js/hci-friends.js"></script>
+			
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+

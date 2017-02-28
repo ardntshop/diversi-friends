@@ -37,11 +37,11 @@
 {{#each friends}}
       <div id="userPreview" id="{{id}}">
           <img src="{{imageURL}}" width="15%" ... />
-          <a href="diversi-friends/{{name}}" ... />
-          <p>{{name}}</p>
-          <p>{{personalStatement}}</p>
-          <p>{{description}}</p>
-        </a>
+          <p>Name: {{name}}</p>
+          <p>Personal Statement: {{personalStatement}}</p>
+          <p>Description: {{description}}</p>
+          <p>Email Adress: {{emailAddress}}</p>
+          <button class="removeFriend">Remove Friend</button>
       </div>
     {{/each}}
 

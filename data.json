@@ -30,21 +30,25 @@
 			"name": "First Friend",
 			"personalStatement": "My political views are mostly from a first friend perspective.",
 			"description":"Into being the first friend",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
+			"emailAddress": "somebody@someemailaddress.com"			
 		},
 		{
 			"name": "Second Friend",
 			"personalStatement": "My political views are mostly from a second friend perspective.",
 			"description":"Into being the second friend",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"emailAddress": "somebodyelse@someotheremailadress.com"			
 		}
 	],
 
 	"profile": [
 		{
-			"name": "Person That is You",
+			"name": "Tommy Rich",
 			"personalStatement": "I'm down with stuff about political stuff.",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",			
+			"age": "38",
+			"politicalView": "Progressive"
 		}
 	]
 

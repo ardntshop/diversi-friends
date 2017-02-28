@@ -4,13 +4,28 @@
 $(document).ready(function() {
 	initializePage();
 })
-
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
 	console.log("Javascript connected!");
 }
+
+$('.connectionRequestButtons').click(function() {
+	alert("Your Connect Request has been sent!");
+});
+
+$('.hideProfile').click(function() {
+	alert("You have hidden the profile.");
+});
+
+$('.acceptConnection').click(function() {
+	alert("You have accepted the connection. ");
+});
+
+$('.removeFriend').click(function() {
+	alert("You have removed the friend from your list.");
+});
 
 function anagrammedName(name) {
 	// Thanks, Internet Anagram Server!
