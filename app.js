@@ -16,6 +16,8 @@ var requests = require('./routes/requests');
 var index = require('./routes/index');
 var profile = require('./routes/profile');
 var friends = require('./routes/friends');
+var hideMatch = require('./routes/hideMatch');
+var showConnectionRequest = require('./routes/showConnectionRequest');
 
 
 var app = express();
@@ -52,6 +54,10 @@ app.get('/index', index.view);
 app.get('/profile', profile.view);
 app.get('/friends', friends.view);
 
+//write JSON data (Added by Tommy 2/28):
+//app.post('/requests/:id', requests.declineRequest);
+app.get('/hideMatch', hideMatch.view);
+app.get('/showConnectionRequest', showConnectionRequest.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

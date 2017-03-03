@@ -2,11 +2,15 @@
 /*
  * GET home page.
  */
- var data = require('../data.json');
-
+ //var data = require('../data.json');
+//var fs = require('fs');
+//var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
 
 exports.view = function(req, res){
-  res.render('index', data);
+
+	var fs = require('fs');
+	var data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+  	res.render('index', data);
 };
 
 

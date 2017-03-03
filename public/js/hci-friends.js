@@ -12,12 +12,28 @@ function initializePage() {
 }
 
 $('.connectionRequestButtons').click(function() {
+	var name = $(this).attr("name");
+	$.get('/showConnectionRequest?name='+name, null);
+	$(this).hide();
 	alert("Your Connect Request has been sent!");
 });
 
 $('.hideProfile').click(function() {
-	alert("You have hidden the profile.");
+	var name = $(this).attr("name");
+	$.get('/hideMatch?name='+name, hideMatchCallback);
+	
+	$(this).parent().parent().hide();
+	//document.getElementById(name).hidden=true;
+	//alert("You have hidden the profile for "+name);
 });
+
+
+
+
+
+
+function hideMatchCallback(result){
+}
 
 $('.acceptConnection').click(function() {
 	alert("You have accepted the connection. ");

@@ -26,6 +26,7 @@
 <div id="headings">
 	<h1>Have a look!</h1>
 	<p>The people shown below have a different political view from you!</p>
+	<p>Sending a connection request will make your email address available to the recipient.</p>
 	
 	<!--<select>
 		<option value="politics"> Politics</option> 
@@ -44,20 +45,25 @@
 	<div id="contentBox">
 		<div>
 			{{#each diversimatches}}
-      			<div id="userPreview" id="{{id}}">
+				{{#if display}}
+				<div id="{{name}}">
+      			<div id="userPreview">
           			<img src="{{imageURL}}" width="15%" ... />
           			<p>{{name}}</p>
           			<p>{{description}}</p>
-          			<p>Sending a "Connection Request" will make your email address available to {{name}}.</p>
+          		
           			<br>
    					
    				<div>
-          			<div class="connectionRequestButtons"> <button>Send Connection Request</button></div>
+   				{{#if showConnectionRequest}}
+          			<div class="connectionRequestButtons" name="{{name}}"> <button>Send Connection Request</button></div>
+          			{{/if}}
 
-          			<div class="hideProfile"><button>Hide This Profile</button>
+          			<div class="hideProfile" name="{{name}}"><button>Hide This Profile</button>
+          			</div>
           			</div>
       			</div>
-
+      			{{/if}}
     		{{/each}}
 			
 		</div>

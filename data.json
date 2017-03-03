@@ -3,58 +3,53 @@
 		{
 			"name": "Tommy Rich",
 			"description": "Has awesome pet mice",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
+			"display": true,
+			"showConnectionRequest": true
 		},
 		{
 			"name": "Ivan Sutherland",
 			"description": "Great at sketching",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+			"display": true,
+			"showConnectionRequest": true
 		}
 	],
-
 	"requests": [
 		{
 			"name": "Some Guy",
 			"description": "Likes Trump",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"
 		},
 		{
 			"name": "Another Guy",
 			"description": "Likes Hillary",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"
 		}
 	],
-
 	"friends": [
 		{
 			"name": "First Friend",
 			"personalStatement": "My political views are mostly from a first friend perspective.",
-			"description":"Into being the first friend",
+			"description": "Into being the first friend",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
-			"emailAddress": "somebody@someemailaddress.com"			
+			"emailAddress": "somebody@someemailaddress.com"
 		},
 		{
 			"name": "Second Friend",
 			"personalStatement": "My political views are mostly from a second friend perspective.",
-			"description":"Into being the second friend",
+			"description": "Into being the second friend",
 			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
-			"emailAddress": "somebodyelse@someotheremailadress.com"			
+			"emailAddress": "somebodyelse@someotheremailadress.com"
 		}
 	],
-
 	"profile": [
 		{
 			"name": "Tommy Rich",
 			"personalStatement": "I'm down with stuff about political stuff.",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",			
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
 			"age": "38",
 			"politicalView": "Progressive"
 		}
 	]
-
-
-
 }
-
-
-
